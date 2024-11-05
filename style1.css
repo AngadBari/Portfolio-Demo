@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    font-family: "Ubuntu", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width:1000px;
+    height: 650px;
+    width: 150vh;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow:  0 5px 10px rgb(0, 0, 0,0.1);
+    position: relative;
+    gap:20px;
+    padding:30px;
+    margin-top: 60px;
+}
+.profile-img::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    top:0;
+    left: 0;
+    border-radius: 25px 25px 0 0;
+    
+}
+
+img{
+    border-radius: 50%;  
+    
+    padding: 3px;  
+}
+
+ .imge{
+    position: relative;
+    height: 150px;
+    width:150px;
+
+ }
+ .imge .angad-img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border: 3px solid #db9696;
+
+ }
+ .profile-img .profile-data{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+ }
+ .profile-data .name{
+    font-size: 25px;
+    font-weight: 500;
+ }
+ .profile-data .location
+ {
+    font-size: 15px;
+    font-weight: 400;
+ }
+ 
+ .profile-img {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    
+ }
+ #location
+ {
+    font-size: 18px;
+ }
+ 
+
+.icon-links
+{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+}
+.logo
+{
+   height: 40px;
+   width: 40px;
+}
+.box
+{
+   min-height: 60px;
+   width: calc(50% - 10px);
+   border-radius: 12px;
+   box-shadow: rgba(0, 0, 0, 0.24)  1px 3px 8px 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 15px;
+   background-color: whitesmoke;
+   cursor: pointer;
+   transition:transfrom 0.3s, box-shadow 0.3s;
+   text-decoration: none;
+   flex-wrap: wrap;
+
+}
+
+.box:hover {
+   transform: scale(1.02);
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px 0px;
+ }
+
+ .box .link .long-text {
+   font-size: 14px;
+ }
+
+.link
+{
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 500;
+   color: black;
+   word-break: break-word;
+   text-align: right;
+   flex: 1;
+   margin-left:10px ;
+}
+
+@media only screen and (max-width: 600px) {
+   .box {
+     width: 100%;
+   }
+ 
+   .link {
+     font-size: 16px;
+   }
+ 
+   .container {
+     padding: 15px;
+   }
+ }
+ @media only screen and (max-width: 400px) {
+   .link {
+     font-size: 14px;
+   }
+ 
+   .logo {
+     height: 30px;
+     width: 30px;
+   }
+   .box .link.long-text {
+     font-size: 14px;
+   }
+ }
